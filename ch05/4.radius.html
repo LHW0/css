@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>border-radius</title>
+    <style>
+        div {
+            border: .1rem solid;
+            width: 10rem;
+            height: 10rem;
+            margin: 1rem;
+            float: left;
+        }
+
+        #one {
+            border-radius: 1rem;
+        }/*border-radius는 모든 모서리에 1rem의 반구가 생긴것처럼 둥글게 만든다*/
+
+        #two {
+            border-radius: 50%;
+        }/*%계산시 분자는 네 모서리에 있는 반지름의 길이, 
+        분모는 container의 width, height값이다.*/
+
+        #three {
+            border-bottom-right-radius: 2rem;
+        }/*오른쪽 아래 모서리만 적용*/
+    </style>
+</head>
+<body>
+    <div></div>
+    <div id='one'>M</div>
+    <div id='two'>50%</div>
+    <div id='three'>bottom right</div>
+</body>
+</html>

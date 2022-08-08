@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>paragraph</title>
+    <style>
+        p {
+            border: .1rem solid;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .bigLine {
+            line-height: 2rem;
+        }
+
+        .overflow {
+            width: 20rem;
+            white-space: nowrap; /*wrap부모객체 크기에 맞춰서 잡아주고 nowrap은 그냥 풀어놓는다. 
+            풀어 놓으면 울타리를 넘어가게되어 아래에 스크롤바가 생긴다*/
+            overflow: hidden; /*감추기*/
+        }
+    </style>
+</head>
+<body>
+    <p>하늘에서 내리던 비가 그쳤다. 하얀 구름 사이로 햇살이 비친다. 햇살이 지나간 자리에 무지개가 떠오른다.</p>
+    <p class='right'>하늘에서 내리던 비가 그쳤다. 하얀 구름 사이로 햇살이 비친다. 햇살이 지나간 자리에 무지개가 떠오른다.</p>
+    <p class='center'>하늘에서 내리던 비가 그쳤다. 하얀 구름 사이로 햇살이 비친다. 햇살이 지나간 자리에 무지개가 떠오른다.</p>
+    <p class='bigLine'>하늘에서 내리던 비가 그쳤다. 하얀 구름 사이로 햇살이 비친다. 햇살이 지나간 자리에 무지개가 떠오른다.</p>
+    <p class='overflow'>하늘에서 내리던 비가 그쳤다. 하얀 구름 사이로 햇살이 비친다. 햇살이 지나간 자리에 무지개가 떠오른다.</p>
+</body> <!-- text안에서 스페이스를 아무리 많이써도 1개로 인식됨-->
+</html>

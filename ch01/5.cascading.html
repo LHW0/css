@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>cascading</title>
+    <style>
+        /*과제: table element에 글자 색깔: 파랑 style을 적용하라*/
+        table {
+            color: blue;
+        }
+
+        td.kor {
+            color: red;
+        } /*Override 한것*/
+    </style>
+</head>
+<body>
+    <table>
+        <caption>인사</caption>
+        <tr><td class='kor'>안녕</td><td>한국</td></tr>
+        <tr><td>Hello</td><td>미국</td></tr>
+    </table>
+</body>
+</html>
+<!-- 콕찝어내려면 id를 입혀서 id클래스가 편함-->

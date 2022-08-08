@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>absolute</title>
+    <style>
+        div {
+            padding: 3rem;
+        }
+
+        #container {
+            position: relative; 
+            padding: 10rem;
+            border: .1rem solid;
+        }/*absolute를 쓰려면 container는 position: static이 아니어야한다*/
+
+        .one { 
+            background: red;
+            position: absolute; /*컨테이너 위치가 원점이다.*/
+            left: 2rem;
+            top: 1rem;
+        }
+
+        .two {
+            background: orange;
+            position: absolute;
+            left: 5rem;
+            top: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <div id='container'><!--밑의 두클래서 들은 부모의 위치가 원점-->
+        <div class='one'></div>
+        <div class='two'></div>
+    </div>
+</body>
+</html>

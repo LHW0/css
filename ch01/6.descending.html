@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>descending selector</title>
+    <style>  /*디센딩은 내 밑의 해당자식들은 모두 적용*/
+        section ul { /*스페이스 section ul하나 들어가면 디센딩*/
+            border: 0.1rem solid; 
+        }/*fixel, rem(대문자M 글자크기에 루트를 붙인것), em(대문자M 글자크기) 1em은 16pixel*/
+    </style>
+</head>
+<body>
+    <section>
+        <ul>
+            <li>예약방법
+                <ul>
+                    <li>전화</li>
+                    <li>인터넷</li>
+                </ul>
+            </li>
+            <li>요금
+                <ul>
+                    <li>성수기: 20만원</li>
+                    <li>비수기: 10만원</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
